@@ -1,16 +1,48 @@
 /* ==========================================================================
-   1. OPTIMALISASI UNTUK TABLET (Maksimal Lebar 768px)
+   TATA LETAK MOBILE & TABLET (Maksimal Lebar 768px)
    ========================================================================== */
 @media (max-width: 768px) {
+    /* --- Navbar Mobile (Mencegah teks menu meluap keluar layar) --- */
     .navbar {
-        padding: 10px 20px !important;
         height: auto !important;
+        flex-direction: column !important; /* Menumpuk logo di atas dan menu di bawah */
+        padding: 15px 10px !important;
+        border-radius: 0 0 15px 15px !important;
     }
-    
+
+    .logo {
+        justify-content: center !important;
+        height: 45px !important;
+        margin-bottom: 12px !important;
+        width: auto !important;
+    }
+
+    .nav-links {
+        justify-content: center !important;
+        gap: 10px !important;
+        flex-wrap: wrap !important; /* Memaksa link turun otomatis jika layar sempit */
+        width: 100% !important;
+    }
+
+    .nav-links li {
+        margin: 4px 6px !important;
+    }
+
+    .nav-links a {
+        font-size: 14px !important;
+    }
+
+    .btn {
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+    }
+
+    /* --- Hero Section Mobile --- */
     .hero {
         flex-direction: column !important;
         text-align: center !important;
         padding: 40px 20px !important;
+        min-height: auto !important;
     }
 
     .hero-content {
@@ -19,89 +51,75 @@
     }
 
     .hero-content h1 {
-        font-size: 34px !important; /* Scales title cleanly down on tablet */
-        line-height: 1.2 !important;
-    }
-
-    .hero-buttons {
-        justify-content: center !important;
-    }
-
-    .features {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 20px !important;
-        margin-top: 20px !important;
-        padding: 0 20px !important;
-    }
-
-    .card {
-        flex: none !important;
-        width: calc(50% - 15px) !important; /* 2 columns on tablet devices */
-        margin: 0 !important;
-    }
-}
-
-/* ==========================================================================
-   2. OPTIMALISASI UNTUK TELEPON / PONSEL (Maksimal Lebar 480px)
-   ========================================================================== */
-@media (max-width: 480px) {
-    /* --- Fixes the huge clipped heading text from your screenshot --- */
-    .hero-content h1 {
-        font-size: 28px !important; /* Perfect fit for phone screens */
+        font-size: 30px !important; /* Pas untuk ukuran lebar 509px */
         line-height: 1.2 !important;
         word-wrap: break-word !important;
     }
 
     .hero-content p {
         font-size: 14px !important;
-        padding: 0 10px !important;
+        padding: 0 !important;
     }
 
-    /* --- Forces cards to stack vertically instead of squeezing horizontally --- */
-    .features {
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 15px !important;
-        margin-top: 30px !important;
+    .hero-buttons {
+        justify-content: center !important;
+    }
+
+    .hero-image, .hero-image2 {
+        margin: 20px 0 0 0 !important;
         width: 100% !important;
     }
 
-    .card {
-        width: calc(100% - 40px) !important; /* Stacks 1 item per row cleanly */
-        max-width: 340px !important;
+    .slideshow-container, .slideshow-container-2, .slideshow-container-3 {
+        height: 250px !important;
         margin: 0 auto !important;
     }
 
-    /* --- Navbar Optimization --- */
-    .navbar {
+    /* --- Kartu Fitur Menjadi Satu Kolom Penuh --- */
+    .features {
         flex-direction: column !important;
-        height: auto !important;
+        align-items: center !important;
+        gap: 20px !important;
+        margin-top: 30px !important;
+        padding: 0 20px !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 360px !important;
+        margin: 0 auto !important;
+    }
+
+    /* --- Grid Layanan Menjadi Satu Kolom Penuh --- */
+    .grid-container {
+        grid-template-columns: 1fr !important;
         padding: 10px !important;
     }
-
-    .logo {
-        justify-content: center !important;
-        height: 45px !important;
-        margin-bottom: 10px !important;
+    
+    .grid-img {
+        height: 180px !important;
     }
 
-    .nav-links {
-        justify-content: center !important;
-        gap: 8px !important;
-        flex-wrap: wrap !important;
+    /* --- Pembersihan Elemen Kontak & Halaman Tentang --- */
+    .contact-container {
+        flex-direction: column !important;
+        gap: 30px !important;
     }
 
-    .nav-links li {
-        margin: 4px !important;
+    div[style*="display:flex"], div[style*="display: flex"] {
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
-    .nav-links a {
-        font-size: 13px !important;
+    div[style*="width:150px"], div[style*="width:260px"] {
+        width: 100% !important;
+        margin: 0 0 10px 0 !important;
+        text-align: center !important;
     }
 
-    .btn {
-        padding: 8px 16px !important;
-        font-size: 12px !important;
+    ul[style*="margin-left: 90px"], div[style*="margin-left:40px"], div[style*="margin-left: 20px"] {
+        margin-left: 0 !important;
+        text-align: center !important;
+        padding: 0 !important;
     }
 }
