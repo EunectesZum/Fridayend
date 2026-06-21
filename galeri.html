@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galeri</title>
+    <link rel="stylesheet" href="part2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href=".css">
+</head>
+<body>
+     <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+        <img src="Logo Indofood.png" alt="Logo">
+    </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="#" class="btn btn-blue">Get Started</a></li>
+        </ul>   
+    </nav>
+    <div style="width:100%; text-align:center; margin-top: 40px; font-family:Arial;">
+        <h1 style="font-size: 36px; margin-bottom: 20px;">Galeri Kami</h1>
+        <p style="font-size: 18px; margin-bottom: 40px;">Berikut adalah beberapa momen dan produk terbaik dari PT Indofood Sukses Makmur Tbk.</p>
+</div> 
+    <div class="slideshow-container-3">
+    <img src="indofood1.png" alt="Illustration 1" class="slide3 active" >
+    <img src="indofood2.png" alt="Illustration 2" class="slide3" >
+    <img src="indofood3.jpg" alt="Illustration 3" class="slide3" >
+
+    <button class="slider-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+</div>
+<footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+    <p style="margin-top: 15px; font-size: 14px;">Copyright &copy; 2026 PT Indofood Sukses Makmur Tbk. All Rights Reserved.</p>
+</footer>
+<script>
+    let currentSlideIndex = 0;
+
+    function changeSlide(direction) {
+        // Grab all images belonging to slide3
+        const slides = document.querySelectorAll('.slide3');
+        
+        // Remove the 'active' class from the current visible image
+        slides[currentSlideIndex].classList.remove('active');
+        
+        // Calculate the next image index
+        currentSlideIndex += direction;
+        
+        // Loop back to the start if you reach the end
+        if (currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        }
+        // Loop back to the end if you press back on the first image
+        if (currentSlideIndex < 0) {
+            currentSlideIndex = slides.length - 1;
+        }
+        
+        // Add the 'active' class to the new image so it appears
+        slides[currentSlideIndex].classList.add('active');
+    }
+</script>
+</body>
+</html>
