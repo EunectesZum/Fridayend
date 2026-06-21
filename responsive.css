@@ -1,0 +1,39 @@
+/* ==========================================================================
+   1. TABLET LAYOUT (Screens smaller than 1024px wide)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    /* Shrink huge desktop padding so content doesn't get squeezed */
+    .hero {
+        padding: 60px 5%;
+    }
+    
+    /* Make your main 4 cards drop into a comfortable 2x2 grid matrix */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* ==========================================================================
+   2. MOBILE PHONE LAYOUT (Screens smaller than 768px wide)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Stack your hero buttons vertically if they run out of horizontal space */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    /* Force your cards into a single, vertical column so users can just scroll down */
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Slightly decrease font sizes so headings don't wrap awkwardly */
+    h1 {
+        font-size: 28px;
+    }
+}
