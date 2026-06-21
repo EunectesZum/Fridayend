@@ -120,6 +120,31 @@
     ul[style*="margin-left: 90px"], div[style*="margin-left:40px"], div[style*="margin-left: 20px"] {
         margin-left: 0 !important;
         text-align: center !important;
+       
         padding: 0 !important;
+    }
+}
+/* ==========================================================================
+   TATA LETAK LAPTOP KECIL / MEDIUM (Lebar 769px sampai 1200px)
+   ========================================================================== */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .navbar {
+        padding: 15px 30px !important; /* Memberikan ruang ekstra di sisi samping */
+    }
+    
+    .nav-links li {
+        margin: 0 12px !important; /* Merapatkan jarak antar menu agar pas di laptop kecil */
+    }
+    
+    .nav-links a {
+        font-size: 14px !important; /* Sedikit memperkecil teks menu */
+    }
+
+    .hero-content h1 {
+        font-size: 42px !important; /* Mengurangi font hero desktop agar tidak kebesaran */
+    }
+    
+    .card {
+        margin: 0 15px !important; /* Menyetel margin luar kartu agar seimbang */
     }
 }
