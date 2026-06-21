@@ -1,0 +1,112 @@
+/* Section Wrapper */
+.school-form-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Container Box */
+.school-form-container {
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Deep Purple Header Bar */
+.school-form-header {
+    background-color: #3f3647;
+    padding: 16px 20px;
+}
+
+.school-form-header .header-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Form Body Padding */
+.school-form-body {
+    padding: 30px;
+}
+
+/* Cream Notice Alert Box */
+.school-info-banner {
+    background-color: #fff9e6;
+    border-left: 4px solid #d4af37;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.school-info-banner p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Section Divider */
+.school-section-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3f3647;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2e6930; /* Green highlight bar */
+    margin-bottom: 20px;
+}
+
+/* Input Fields Formatting */
+.school-input-group {
+    margin-bottom: 20px;
+}
+
+.school-input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.school-input-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fafafa;
+    transition: all 0.2s ease;
+}
+
+.school-input-group input:focus {
+    border-color: #2e6930;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(46, 105, 48, 0.1);
+}
+
+/* Green Submit Button */
+.school-form-btn {
+    width: 100%;
+    background-color: #2e6930;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.school-form-btn:hover {
+    background-color: #1e4d20;
+}

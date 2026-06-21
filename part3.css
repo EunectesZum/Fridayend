@@ -1,0 +1,163 @@
+/* Container block setup */
+.contact-section {
+    width: 100%;
+    padding: 80px 20px;
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center; /* Centers items beautifully vertically */
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 320px;
+}
+
+/* Elegant minor subtitles */
+.sub-title {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0056b3; /* Sleek structural blue header accent */
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contact-info h2 {
+    font-size: 42px;
+    font-weight: 300; /* Lighter weight looks cleaner and premium */
+    margin: 0 0 15px 0;
+    color: #111;
+    letter-spacing: -1px;
+}
+
+/* Minimalist separator line under title */
+.title-divider {
+    width: 50px;
+    height: 3px;
+    background-color: #0056b3;
+    margin-bottom: 35px;
+}
+
+.corporate-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-block {
+    border-left: 2px solid #e0e0e0; /* Subtle timeline border on left side */
+    padding-left: 20px;
+}
+
+.info-row {
+    margin-bottom: 20px;
+}
+
+.info-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.contact-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin: 0;
+}
+
+/* Premium Frame wrapper for Map */
+.contact-map {
+    flex: 1.3;
+    min-width: 320px;
+    border-radius: 12px; /* Smooth rounded corners */
+    overflow: hidden;
+    background: #fff;
+    /* Soft premium drop shadow framework */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle interact look when hover over map box */
+.contact-map:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.contact-map iframe {
+    display: block;
+}
+/* Backdrop Overlay remains fixed */
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10000;
+}
+
+/* Modifying the actual white form box position system */
+.modal-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    position: absolute; /* Changed to absolute positioning to allow free movement */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers it initially */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* The Draggable Header Zone Bar */
+.modal-header {
+    padding: 12px 20px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: move; /* Changes cursor to a crosshair move icon */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #777;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Move the close X button inside the header bar frame */
+.close-modal-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+.close-modal-btn:hover {
+    color: #333;
+}
+
+/* Standard inner paddings for content below header */
+.modal-card h2, .modal-card p, .modal-card form {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.modal-card h2 { margin-top: 25px; }
+.modal-card form { padding-bottom: 30px; }
